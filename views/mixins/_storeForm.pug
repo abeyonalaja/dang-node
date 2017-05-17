@@ -13,7 +13,7 @@ mixin storeForm(store = {})
         value=(store.location && store.location.coordinates[0]) )
 
         label(for="lat") Address Lat
-        input(type="text" id="lng" name="location[coordinates][1]"
+        input(type="text" id="lat" name="location[coordinates][1]"
         value=(store.location && store.location.coordinates[1]) required)
 
 
