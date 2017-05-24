@@ -1,3 +1,9 @@
-/**
- * Created by abideenonalaja on 23/05/2017.
- */
+
+const passport = require('passport');
+
+exports.login = passport.authenticate('local', {
+    failureRedirect: '/login',
+    failureFlash: 'Failed Login!',
+    successRedirect: '/',
+    successFlash: "You have logged in"
+});
